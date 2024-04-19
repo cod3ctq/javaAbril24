@@ -6,6 +6,7 @@ public class principal {
 
 	public static void main(String[] args) {
 
+
 		// IF
 
 		String x = "Puebla";
@@ -20,10 +21,12 @@ public class principal {
 
 		// AND--------- si las 2 condiciones se cumplen es "verdadero" sino "falso"
 		// TRUE TRUE : TRUE O TRUE FALSE : FALSE
+
+
 		/*
 		 * if (x.length() > 10 && x.equals("puebladezaragoza")) {
 		 * System.out.println("OK");
-		 * 
+		 *
 		 * } else { System.out.println("No"); }
 		 */
 
@@ -31,17 +34,23 @@ public class principal {
 		// sera"Verdadero";sino se cumplen ninguna sera "falso"
 		/*
 		 * if (x.length() > 10 || x.equals("Puebladezaragoza")) {
+		 * } else { System.out.println("NO"); }
+		 */
+
+		// OR (||) ---DEBE CUMPLIR UNA U OTRA CONDICION Y SERA VERDADERO (>10=letras de
+		// la variable)
+		/*
+		 * if (x.length() > 10 || x.equals("puebladezaragoza")) {
 		 * System.out.println("VERDADERO");
 		 * 
 		 * } else { System.out.println("FALSO"); }
 		 */
 
+
 		// NEGACION (!)----- poner el signo despues del if y abrir nuevo parentesis
 		/*
 		 * if (!(x.equals("PuebladeZaragoza"))) { System.out.println("OK");
-		 * 
-		 * } else { System.out.println("NO"); }
-		 */
+
 
 		// IF ANIDADOS
 		/*
@@ -65,25 +74,29 @@ public class principal {
 			System.out.println("caso 3");
 			break;
 		case "HOLA":
+   
+
+		// SWITCH ------- ENCUENTRA LA PRIMER VARIABLE CORRECTA
+
+		switch (x) {
+		case "HOLA":
+			System.out.println("caso 1");
+			break;
+		case "HOLa":
+			System.out.println("caso 2");
+			break;
+		case "HOla":
+			System.out.println("caso 3");
+			break;
+		case "Hola":
 			System.out.println("caso 4");
 			break;
 		case "hola":
 			System.out.println("caso 5");
 			break;
 		default:
-			System.out.println("NINGUNO ES IGUAL");
 
-		}*/
-
-		
-//		Scanner sn = new Scanner(System.in);
-//		System.out.println("mnsaje:");
-//		
-//		String m = sn.nextLine();
-//		
-//		System.out.println(m);
-//		System.out.println("numero");
-//		int d = sn.nextInt()
+			System.out.println("Ninguno es igual");
+		}
 	}
-		
-}
+
